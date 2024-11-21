@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Providers } from "@/lib/Providers";
 
 export const metadata: Metadata = {
   title: "Md Nurullah Bhuiyan",
@@ -14,9 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased`}>
-        <h1 className="text-blue-900">Hello from rooot layoyt</h1>
-        {children}
+      <body>
+        <Providers>
+          <main>{children}</main>
+        </Providers>
       </body>
     </html>
   );

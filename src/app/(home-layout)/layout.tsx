@@ -4,9 +4,9 @@ export default function HomeLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <main>
-      <nav>Hello Home page</nav>
+    <div>
+      <div>Navbar HomeLayout</div>
       {children}
-    </main>
+    </div>
   );
 }
