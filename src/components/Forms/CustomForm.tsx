@@ -1,42 +1,34 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
+import { zodResolver } from "@hookform/resolvers/zod";
 import { ReactNode } from "react";
-import { FormProvider, SubmitHandler, useForm } from "react-hook-form";
+import { SubmitHandler, useForm } from "react-hook-form";
+import { z } from "zod";
+import { Form } from "../ui/form";
 
 interface formConfig {
   defaultValues?: Record<string, any>;
   resolver?: any;
 }
-
 interface IProps extends formConfig {
   children: ReactNode;
   onSubmit: SubmitHandler<any>;
 }
-
 export default function CustomForm({
   children,
   onSubmit,
   defaultValues,
   resolver,
 }: IProps) {
-  const formConfig: formConfig = {};
-
-  if (!!defaultValues) {
-    formConfig["defaultValues"] = defaultValues;
-  }
-
-  if (!!resolver) {
-    formConfig["resolver"] = resolver;
-  }
-
-  const methods = useForm(formConfig);
-
-  const submitHandler = methods.handleSubmit;
+  const form = useForm<z.infer<typeof resolver>>({
+    resolver: zodResolver(resolver),
+    defaultValues: defaultValues,
+  });
 
   return (
-    <FormProvider {...methods}>
-      <form onSubmit={submitHandler(onSubmit)}>{children}</form>
-    </FormProvider>
+    <Form {...form}>
+      <form onSubmit={form.handleSubmit(onSubmit)}>{children}</form>
+    </Form>
   );
 }

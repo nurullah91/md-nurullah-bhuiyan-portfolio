@@ -1,6 +1,5 @@
 "use client";
-import { useRouter, useSearchParams } from "next/navigation"; // To handle redirection
-import { zodResolver } from "@hookform/resolvers/zod";
+import { useRouter, useSearchParams } from "next/navigation";
 import { FieldValues, SubmitHandler } from "react-hook-form";
 import { toast } from "sonner";
 import { useEffect, useState } from "react";
@@ -43,7 +42,11 @@ export default function LoginForm() {
 
   return (
     <div>
-      <CustomForm onSubmit={handleSubmit} resolver={zodResolver(loginSchema)}>
+      <CustomForm
+        onSubmit={handleSubmit}
+        resolver={loginSchema}
+        defaultValues={{ email: "", password: "" }}
+      >
         <CustomInput
           label="Email"
           name="email"

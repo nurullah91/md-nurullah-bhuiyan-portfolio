@@ -1,12 +1,12 @@
-import { Button } from "@/components/ui/button";
-
+import About from "@/components/Home/Sections/About";
+import Contact from "@/components/Home/Sections/Contact";
+import Intro from "@/components/Home/Sections/Intro";
 export default function Home() {
   return (
     <div>
-      <h1 className="text-center font-bold text-3xl text-rose-500 my-2">
-        Welcome
-      </h1>
-      <Button>Click me</Button>
+      <Intro />
+      <About />
+      <Contact />
     </div>
   );
 }

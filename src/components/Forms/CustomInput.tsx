@@ -8,6 +8,7 @@ import {
   FormLabel,
   FormMessage,
 } from "../ui/form";
+import { useFormContext } from "react-hook-form";
 
 interface IProps {
   placeholder?: string;
@@ -22,17 +23,20 @@ export default function CustomInput({
   name,
   placeholder,
 }: IProps) {
+  const { control } = useFormContext();
+
   return (
     <div className="mt-3">
       <FormField
         name={name}
-        render={({ field }) => (
+        control={control}
+        render={({ field, fieldState }) => (
           <FormItem>
             <FormLabel>{label}</FormLabel>
             <FormControl>
               <Input placeholder={placeholder} {...field} type={type} />
             </FormControl>
-            <FormMessage />
+            <FormMessage>{fieldState.error?.message}</FormMessage>
           </FormItem>
         )}
       />
