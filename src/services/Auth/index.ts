@@ -19,6 +19,8 @@ export const loginUser = async (userData: string) => {
 
       return data;
     }
+
+    return data;
   } catch (error: any) {
     // Return the error message for notify user
     console.log(error.response.data);

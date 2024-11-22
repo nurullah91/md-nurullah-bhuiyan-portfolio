@@ -24,7 +24,6 @@ export default function LoginForm() {
   const { mutate: handleLogin, isPending, data: loginData } = useLoginUser();
 
   useEffect(() => {
-    console.log(loginData);
     if (loginData && !loginData?.success) {
       toast.error(loginData?.message as string);
     } else if (loginData && loginData?.success) {
