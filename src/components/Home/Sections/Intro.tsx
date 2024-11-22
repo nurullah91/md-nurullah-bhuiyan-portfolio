@@ -50,7 +50,7 @@ export default function Intro() {
           <div className="text-white bg-blue-500 bg-opacity-60 absolute bottom-5 right-5 px-6 py-4 rounded">
             <p>Projects</p>
             <h2 className="text-3xl  font-semibold">
-              <NumberCountUp delay={2} start={0} end={45} /> + Projects
+              <NumberCountUp delay={2} start={0} end={55} /> + Projects
             </h2>
           </div>
         </div>
