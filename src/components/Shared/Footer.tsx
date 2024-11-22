@@ -10,6 +10,8 @@ import {
 import Wave from "react-wavify";
 
 const Footer = () => {
+  const year = new Date().getFullYear();
+
   return (
     <div>
       <div className="bg-blue-950 relative overflow-hidden w-full mb-14 md:mb-0">
@@ -79,7 +81,7 @@ const Footer = () => {
             </div>
 
             <p className="text-slate-300 text-center mt-8">
-              Copyright © 2023 - All right reserved by Md Nurullah Bhuiyan
+              Copyright © {year} - All right reserved by Md Nurullah Bhuiyan
             </p>
           </div>
         </div>
