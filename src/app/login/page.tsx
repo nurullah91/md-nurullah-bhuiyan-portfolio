@@ -1,4 +1,5 @@
 import LoginForm from "@/components/Forms/LoginForm";
+import { Suspense } from "react";
 
 export default function login() {
   return (
@@ -7,7 +8,9 @@ export default function login() {
         <h1 className="text-center text-2xl font-bold">
           This is Login component
         </h1>
-        <LoginForm />
+        <Suspense fallback={<div>Loading..</div>}>
+          <LoginForm />
+        </Suspense>
       </div>
     </div>
   );

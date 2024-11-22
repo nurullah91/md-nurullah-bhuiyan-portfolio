@@ -7,7 +7,7 @@ import axiosInstance from "@/lib/AxiosInstance";
 
 export const loginUser = async (userData: string) => {
   try {
-    const { data } = await axiosInstance.post("/auth/login", userData, {
+    const { data } = await axiosInstance.post("/login", userData, {
       headers: {
         "Content-Type": "application/json",
       },
@@ -15,12 +15,13 @@ export const loginUser = async (userData: string) => {
 
     if (data.success) {
       const cookieStore = await cookies();
-      cookieStore.set("accessToken", data?.data?.accessToken);
+      cookieStore.set("accessToken", data?.token);
 
       return data;
     }
   } catch (error: any) {
     // Return the error message for notify user
+    console.log(error.response.data);
     return {
       success: false,
       message: error?.response?.data?.message,

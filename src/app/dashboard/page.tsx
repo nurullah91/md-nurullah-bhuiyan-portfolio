@@ -1,4 +1,12 @@
+"use client";
+
+import { Button } from "@/components/ui/button";
+import { logout } from "@/services/Auth";
+
 export default function dashboard() {
+  const handleLogout = () => {
+    logout();
+  };
   return (
     <div>
       <h1
@@ -11,6 +19,7 @@ export default function dashboard() {
       >
         This is Dashboard component
       </h1>
+      <Button onClick={handleLogout}>Logout</Button>
     </div>
   );
 }

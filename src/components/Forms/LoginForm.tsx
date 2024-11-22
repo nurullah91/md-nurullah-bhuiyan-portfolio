@@ -21,25 +21,25 @@ export default function LoginForm() {
   const router = useRouter();
   const redirect = searchParams.get("redirect");
   const { setIsLoading: userLoading } = useUser();
-  const { mutate: handleLogin, isPending, data } = useLoginUser();
+  const { mutate: handleLogin, isPending, data: loginData } = useLoginUser();
 
   useEffect(() => {
-    if (data && !data?.success) {
-      toast.error(data?.message as string);
-    } else if (data && data?.success) {
-      toast.success(data.message);
+    console.log(loginData);
+    if (loginData && !loginData?.success) {
+      toast.error(loginData?.message as string);
+    } else if (loginData && loginData?.success) {
+      toast.success("Login Successful");
       if (redirect) {
         router.push(redirect);
       } else {
-        router.push("/");
+        router.push("/dashboard");
       }
     }
-  }, [data, router, redirect]);
+  }, [loginData, router, redirect]);
 
   const handleSubmit: SubmitHandler<FieldValues> = async (data) => {
-    // handleLogin(JSON.stringify(data));
-    // userLoading(true);
-    console.log(data);
+    handleLogin(JSON.stringify(data));
+    userLoading(true);
   };
 
   return (
@@ -61,7 +61,7 @@ export default function LoginForm() {
 
           <button
             type="button"
-            className="absolute top-5 right-2"
+            className="absolute bottom-3 right-2"
             onClick={() => setShow(!show)}
           >
             {show ? <FaEyeSlash /> : <FaEye />}
