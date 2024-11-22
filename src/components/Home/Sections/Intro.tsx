@@ -22,9 +22,9 @@ export default function Intro() {
           <h3 className="text-3xl text-white my-4 font-semibold">
             <TextWriting
               texts={[
-                "MERN Stack developer",
+                "Full Stack developer (MERN)",
                 "React Developer",
-                "Javascript developer",
+                "Next.js developer",
               ]}
             />
           </h3>

@@ -1,5 +1,5 @@
 import Footer from "@/components/Shared/Footer";
-import Navbar from "@/components/Shared/Navbar";
+import NavbarWrapper from "@/components/Shared/NavbarWrapper";
 
 export default function HomeLayout({
   children,
@@ -8,7 +8,7 @@ export default function HomeLayout({
 }>) {
   return (
     <div>
-      <Navbar />
+      <NavbarWrapper />
       {children}
       <Footer />
     </div>
