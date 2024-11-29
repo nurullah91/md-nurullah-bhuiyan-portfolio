@@ -27,10 +27,7 @@ export default async function Skills() {
             Frontend Skills
           </h2>
 
-          <div
-            data-aos="zoom-out-up"
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 w-11/12 lg:w-9/12 mx-auto"
-          >
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 w-11/12 lg:w-9/12 mx-auto">
             {frontendSkills.map((item) => (
               <div className="flex items-center" key={item._id}>
                 <Image
@@ -51,10 +48,7 @@ export default async function Skills() {
             Backend Skills
           </h2>
 
-          <div
-            data-aos="zoom-in-right"
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 w-11/12 lg:w-9/12 mx-auto"
-          >
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 w-11/12 lg:w-9/12 mx-auto">
             {backendSkills.map((item) => (
               <div className="flex items-center" key={item._id}>
                 <Image
@@ -75,10 +69,7 @@ export default async function Skills() {
             Others Skills
           </h2>
 
-          <div
-            data-aos="zoom-in-right"
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 w-11/12 lg:w-9/12 mx-auto"
-          >
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 w-11/12 lg:w-9/12 mx-auto">
             {othersSkills.map((item) => (
               <div className="flex items-center" key={item._id}>
                 <Image

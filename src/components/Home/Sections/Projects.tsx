@@ -4,7 +4,6 @@ import { TProject } from "@/types";
 
 export default async function Projects() {
   const projects: TProject[] = await getAllProjects();
-
   return (
     <section id="projects" className="bg-[#1b1c41] py-10">
       <div className="w-11/12 lg:w-9/12 mx-auto text-white overflow-hidden">
