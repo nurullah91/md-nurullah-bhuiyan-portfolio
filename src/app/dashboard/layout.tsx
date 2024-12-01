@@ -2,7 +2,7 @@ import Sidebar from "@/components/Dashboard/Sidebar";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Dashboard",
+  title: "Dashboard -Md Nurullah Bhuiyan",
   description: "Dashboard of for admin. Manage users, post's, show analytics",
 };
 

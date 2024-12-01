@@ -104,3 +104,21 @@ body {
   z-index: 70;
   transform: translate(-50%, -50%);
 }
+.prose {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-family: "Inter", sans-serif;
+}
+
+.btn-save {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s;
+}
+
+.btn-save:hover {
+  background-color: #45a049;
+}

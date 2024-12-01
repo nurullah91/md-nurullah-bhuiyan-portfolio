@@ -1,5 +1,12 @@
 import LoginForm from "@/components/Forms/LoginForm";
+import { Metadata } from "next";
 import { Suspense } from "react";
+
+export const metadata: Metadata = {
+  title: "Login -Md Nurullah Bhuiyan",
+  description:
+    "Login page of Md Nurullah Bhuiyan. Full stack web developer. A MERN stack based full stack developer with advance typescript redux and next js experience",
+};
 
 export default function login() {
   return (
