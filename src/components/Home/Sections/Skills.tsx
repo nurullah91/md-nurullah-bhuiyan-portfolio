@@ -1,6 +1,8 @@
 import { getAllSkills } from "@/services/skills";
-import ParticleBG from "../ParticleBG";
+// import ParticleBG from "../ParticleBG";
 import Image from "next/image";
+import SectionHeading from "@/components/SectionHeading";
+import CustomContainer from "@/components/CustomContainer";
 
 export type TSkills = {
   _id: string;
@@ -14,20 +16,18 @@ export default async function Skills() {
   const othersSkills: TSkills[] = await getAllSkills("others");
 
   return (
-    <section id="skills" className="py-10 skillsBG">
+    <section id="skills" className="skillsBG my-12">
       <div className="relative">
-        <ParticleBG />
+        {/* <ParticleBG /> */}
 
-        <div className="">
-          <h2 className="text-4xl text-white font-bold mb-10 text-center">
-            My Skills
-          </h2>
+        <CustomContainer>
+          <SectionHeading title="My Skills" />
 
-          <h2 className="text-3xl font-bold text-center my-5  py-4 text-rose-400">
+          <h2 className="text-3xl font-semibold text-center mt-8 text-rose-500">
             Frontend Skills
           </h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 w-11/12 lg:w-9/12 mx-auto">
+          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {frontendSkills.map((item) => (
               <div className="flex items-center" key={item._id}>
                 <Image
@@ -37,18 +37,16 @@ export default async function Skills() {
                   src={item.icon}
                   alt="Icon"
                 />
-                <h3 className="text-3xl font-semibold text-slate-100 ">
-                  {item.name}
-                </h3>
+                <h3 className="text-xl text-slate-100 ">{item.name}</h3>
               </div>
             ))}
           </div>
 
-          <h2 className="text-3xl font-bold text-center my-5  py-4 text-rose-400">
+          <h2 className="text-3xl font-semibold text-center mt-8 text-rose-500">
             Backend Skills
           </h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 w-11/12 lg:w-9/12 mx-auto">
+          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {backendSkills.map((item) => (
               <div className="flex items-center" key={item._id}>
                 <Image
@@ -58,18 +56,16 @@ export default async function Skills() {
                   src={item.icon}
                   alt="Icon"
                 />
-                <h3 className="text-3xl font-semibold text-slate-100 ">
-                  {item.name}
-                </h3>
+                <h3 className="text-xl  text-slate-100 ">{item.name}</h3>
               </div>
             ))}
           </div>
 
-          <h2 className="text-3xl font-bold text-center my-5  py-4 text-rose-400">
+          <h2 className="text-3xl font-semibold text-center mt-6 text-rose-500">
             Others Skills
           </h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 w-11/12 lg:w-9/12 mx-auto">
+          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {othersSkills.map((item) => (
               <div className="flex items-center" key={item._id}>
                 <Image
@@ -79,13 +75,11 @@ export default async function Skills() {
                   src={item.icon}
                   alt="Icon"
                 />
-                <h3 className="text-3xl font-semibold text-slate-100 ">
-                  {item.name}
-                </h3>
+                <h3 className="text-xl  text-slate-100 ">{item.name}</h3>
               </div>
             ))}
           </div>
-        </div>
+        </CustomContainer>
       </div>
     </section>
   );

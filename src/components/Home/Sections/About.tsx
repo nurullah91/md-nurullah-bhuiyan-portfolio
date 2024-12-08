@@ -1,15 +1,16 @@
 import Image from "next/image";
 import aboutImg from "@/assets/Nurullah3.jpeg";
+import SectionHeading from "@/components/SectionHeading";
 const About = () => {
   return (
-    <section id="about" className="aboutBG py-20">
+    <section id="about" className="aboutBG my-12">
       <div className="w-11/12 lg:w-9/12 mx-auto">
-        <h2 className="text-4xl text-center py-10">About Me</h2>
+        <SectionHeading title="About" />
 
-        <div className="lg:flex items-center">
-          <div className="lg:w-[50%] mr-10">
+        <div className="lg:flex items-center gap-8">
+          <div className="lg:w-[50%]">
             <Image
-              className="w-[70%] mx-auto rounded-md"
+              className="w-[100%] mx-auto rounded-md"
               src={aboutImg}
               alt="Md Nurullah Bhuiyan"
             />
@@ -19,7 +20,7 @@ const About = () => {
             <h3 className="text-3xl text-rose-500 font-bold my-5">
               I am ready to be hired
             </h3>
-            <p>
+            <p className="text-justify">
               Hello, I&apos;m Md Nurullah Bhuiyan, a passionate web developer
               specializing in React. Despite a non-Computer Science background,
               my curiosity and interest in the IT field led me to web

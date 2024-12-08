@@ -59,11 +59,11 @@ const AddSkillsForm = () => {
   }, [isPending, isSuccess, isError]);
 
   return (
-    <div>
+    <div className="w-11/12 mx-auto">
       <form onSubmit={handleSubmit}>
         <label>Skills name</label>
         <input
-          className="block shadow-md rounded border border-blue-800 w-full mb-5 px-3 py-2"
+          className="block shadow-md rounded border  w-full mb-5 px-3 py-2"
           type="text"
           name="skills"
           required
@@ -71,7 +71,7 @@ const AddSkillsForm = () => {
 
         <label>Skills type</label>
         <select
-          className="block shadow-md rounded mb-5 mt-2 border w-full border-blue-800 px-3 py-2"
+          className="block shadow-md rounded mb-5 mt-2 border w-full px-3 py-2"
           name="type"
         >
           <option value="frontend">Front End</option>
@@ -81,7 +81,7 @@ const AddSkillsForm = () => {
 
         <label>Skills logo</label>
         <input
-          className="block bg-blue-200 rounded border border-blue-800"
+          className="block bg-blue-200 rounded border "
           type="file"
           name="logo"
           required
@@ -91,7 +91,7 @@ const AddSkillsForm = () => {
           className={`my-5 text-white px-5 py-2 rounded-md ${
             isPending || loading
               ? "cursor-not-allowed bg-gray-500"
-              : "cursor-pointer bg-blue-600"
+              : "cursor-pointer bg-black/90"
           }`}
           type="submit"
           value={isPending || loading ? "Loading..." : "Add Skills"}

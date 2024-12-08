@@ -31,7 +31,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Providers>
-          <main>{children}</main>
+          <main className="mainBG">{children}</main>
         </Providers>
       </body>
     </html>

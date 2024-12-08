@@ -8,13 +8,14 @@ import {
   FaTelegram,
 } from "react-icons/fa";
 import Wave from "react-wavify";
+import CustomContainer from "../CustomContainer";
 
 const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <div>
-      <div className="bg-blue-950 relative overflow-hidden w-full mb-14 md:mb-0">
+    <footer>
+      <div className="relative overflow-hidden w-full mb-14 md:mb-0">
         <Wave
           className="absolute bottom-0 w-full"
           fill="#02051A"
@@ -27,9 +28,9 @@ const Footer = () => {
           }}
         />
 
-        <div className="relative z-10 p-8">
-          <div className="w-11/12 md:w-9/12 mx-auto">
-            <div className="md:flex justify-between lg:justify-around">
+        <div className="relative z-10">
+          <CustomContainer>
+            <div className="md:flex justify-between">
               <div>
                 <h2 className="text-2xl text-slate-300 font-bold">
                   Contact with me
@@ -80,13 +81,13 @@ const Footer = () => {
               </div>
             </div>
 
-            <p className="text-slate-300 text-center mt-8">
+            <p className="text-slate-300 text-center mt-8 mb-2">
               Copyright © {year} - All right reserved by Md Nurullah Bhuiyan
             </p>
-          </div>
+          </CustomContainer>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

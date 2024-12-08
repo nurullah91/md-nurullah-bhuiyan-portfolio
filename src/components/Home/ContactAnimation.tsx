@@ -7,7 +7,7 @@ const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 export default function ContactAnimation() {
   return (
-    <div>
+    <div className="w-full lg:w-1/2">
       <Lottie animationData={contactAnimation} loop={true} />
     </div>
   );

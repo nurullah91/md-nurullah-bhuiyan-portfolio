@@ -74,7 +74,7 @@ export default function AddProjectForm() {
       <form onSubmit={handleSubmit}>
         <label>Title</label>
         <input
-          className="block shadow-md rounded border border-blue-800 w-full mb-5 px-3 py-2"
+          className="block shadow-md rounded border w-full mb-5 px-3 py-2"
           type="text"
           name="title"
           required
@@ -82,7 +82,7 @@ export default function AddProjectForm() {
 
         <label>Live link</label>
         <input
-          className="block shadow-md rounded border border-blue-800 w-full mb-5 px-3 py-2"
+          className="block shadow-md rounded border w-full mb-5 px-3 py-2"
           type="text"
           name="live"
           required
@@ -90,7 +90,7 @@ export default function AddProjectForm() {
 
         <label>Front end code</label>
         <input
-          className="block shadow-md rounded border border-blue-800 w-full mb-5 px-3 py-2"
+          className="block shadow-md rounded border w-full mb-5 px-3 py-2"
           type="text"
           name="frontend"
           required
@@ -98,7 +98,7 @@ export default function AddProjectForm() {
 
         <label>Back end code</label>
         <input
-          className="block shadow-md rounded border border-blue-800 w-full mb-5 px-3 py-2"
+          className="block shadow-md rounded border w-full mb-5 px-3 py-2"
           type="text"
           name="backend"
         />
@@ -106,7 +106,7 @@ export default function AddProjectForm() {
         <label>Used Technology</label>
 
         <input
-          className="block shadow-md rounded border border-blue-800 w-full mb-5 px-3 py-2"
+          className="block shadow-md rounded  border w-full mb-5 px-3 py-2"
           type="text"
           name="technology"
           placeholder="Separate technologies with comma(,)"
@@ -114,14 +114,14 @@ export default function AddProjectForm() {
 
         <label>Description</label>
         <textarea
-          className="block mb-5 rounded border border-blue-800 w-full h-24 p-3"
+          className="block mb-5 rounded  border w-full h-24 p-3"
           name="description"
           required
         />
 
         <label>Project image</label>
         <input
-          className="block bg-blue-200 shadow-md rounded border border-blue-800"
+          className="block bg-blue-200 shadow-md rounded "
           type="file"
           required
           name="image"
@@ -131,7 +131,7 @@ export default function AddProjectForm() {
           className={`my-5 text-white px-5 py-2 rounded-md ${
             isPending || loading
               ? "cursor-not-allowed bg-gray-500"
-              : "cursor-pointer bg-blue-600"
+              : "cursor-pointer bg-black/90"
           }`}
           type="submit"
           value={isPending || loading ? "Loading..." : "Add Project"}
