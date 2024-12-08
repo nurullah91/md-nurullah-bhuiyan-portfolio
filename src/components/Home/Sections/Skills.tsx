@@ -23,61 +23,66 @@ export default async function Skills() {
         <CustomContainer>
           <SectionHeading title="My Skills" />
 
-          <h2 className="text-3xl font-semibold text-center mt-8 text-rose-500">
-            Frontend Skills
-          </h2>
+          <div className="flex flex-col md:flex-row gap-6 justify-between items-start border-t-2 py-8">
+            <div className="w-full">
+              <h2 className="text-3xl font-semibold text-rose-500">
+                Frontend Skills
+              </h2>
+            </div>
 
-          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            {frontendSkills.map((item) => (
-              <div className="flex items-center" key={item._id}>
-                <Image
-                  width={200}
-                  height={80}
-                  className="w-[15%] mr-3"
-                  src={item.icon}
-                  alt="Icon"
-                />
-                <h3 className="text-xl text-slate-100 ">{item.name}</h3>
-              </div>
-            ))}
+            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+              {frontendSkills.map((item) => (
+                <div
+                  className="flex flex-col items-center justify-end"
+                  key={item._id}
+                >
+                  <Image width={150} height={80} src={item.icon} alt="Icon" />
+                  <h3 className="text-xl text-gray-200 ">{item.name}</h3>
+                </div>
+              ))}
+            </div>
           </div>
 
-          <h2 className="text-3xl font-semibold text-center mt-8 text-rose-500">
-            Backend Skills
-          </h2>
+          {/* Backend Skills */}
+          <div className="flex flex-col md:flex-row gap-6 justify-between items-start border-y-2 py-8">
+            <div className="w-full">
+              <h2 className="text-3xl font-semibold text-rose-500">
+                Backend Skills
+              </h2>
+            </div>
 
-          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            {backendSkills.map((item) => (
-              <div className="flex items-center" key={item._id}>
-                <Image
-                  width={200}
-                  height={80}
-                  className="w-[15%] mr-3"
-                  src={item.icon}
-                  alt="Icon"
-                />
-                <h3 className="text-xl  text-slate-100 ">{item.name}</h3>
-              </div>
-            ))}
+            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+              {backendSkills.map((item) => (
+                <div
+                  className="flex flex-col items-center justify-end"
+                  key={item._id}
+                >
+                  <Image width={150} height={80} src={item.icon} alt="Icon" />
+                  <h3 className="text-xl text-gray-200 ">{item.name}</h3>
+                </div>
+              ))}
+            </div>
           </div>
 
-          <h2 className="text-3xl font-semibold text-center mt-6 text-rose-500">
-            Others Skills
-          </h2>
+          {/* Others skills */}
+          <div className="flex flex-col md:flex-row gap-6 justify-between items-start border-b-2 py-8">
+            <div className="w-full">
+              <h2 className="text-3xl font-semibold text-rose-500">
+                Others Skills
+              </h2>
+            </div>
 
-          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            {othersSkills.map((item) => (
-              <div className="flex items-center" key={item._id}>
-                <Image
-                  width={200}
-                  height={80}
-                  className="w-[15%] mr-3"
-                  src={item.icon}
-                  alt="Icon"
-                />
-                <h3 className="text-xl  text-slate-100 ">{item.name}</h3>
-              </div>
-            ))}
+            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+              {othersSkills.map((item) => (
+                <div
+                  className="flex flex-col items-center justify-end"
+                  key={item._id}
+                >
+                  <Image width={150} height={80} src={item.icon} alt="Icon" />
+                  <h3 className="text-xl text-gray-200 ">{item.name}</h3>
+                </div>
+              ))}
+            </div>
           </div>
         </CustomContainer>
       </div>

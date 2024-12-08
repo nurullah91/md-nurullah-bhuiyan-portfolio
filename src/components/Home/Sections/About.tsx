@@ -1,10 +1,11 @@
 import Image from "next/image";
 import aboutImg from "@/assets/Nurullah3.jpeg";
 import SectionHeading from "@/components/SectionHeading";
+import CustomContainer from "@/components/CustomContainer";
 const About = () => {
   return (
     <section id="about" className="aboutBG my-12">
-      <div className="w-11/12 lg:w-9/12 mx-auto">
+      <CustomContainer>
         <SectionHeading title="About" />
 
         <div className="lg:flex items-center gap-8">
@@ -35,7 +36,7 @@ const About = () => {
             </p>
           </div>
         </div>
-      </div>
+      </CustomContainer>
     </section>
   );
 };
