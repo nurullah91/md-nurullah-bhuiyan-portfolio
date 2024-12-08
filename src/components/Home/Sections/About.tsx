@@ -25,7 +25,7 @@ const About = () => {
               Hello, I&apos;m Md Nurullah Bhuiyan, a passionate web developer
               specializing in React. Despite a non-Computer Science background,
               my curiosity and interest in the IT field led me to web
-              development. With 3 months of experience as a React developer, I
+              development. With 1.5 years of experience as a React developer, I
               have honed my skills in building dynamic and interactive web
               applications. I thrive on collaborating with cross-functional
               teams to create robust and user-friendly solutions. My journey may

@@ -104,13 +104,13 @@ const TextEditor = () => {
   }, [isPending, isSuccess, isError]);
 
   return (
-    <div className="pros">
+    <div className="pros lg:mr-4">
       <input
         type="text"
         placeholder="Enter blog title"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
-        className="w-full shadow-md my-4 py-3 px-6 rounded-md border"
+        className="w-full shadow-md my-4 py-2 px-4 text-xl rounded-md border bg-transparent"
       />
 
       <JoditEditor

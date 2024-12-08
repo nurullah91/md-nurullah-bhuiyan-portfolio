@@ -36,8 +36,8 @@ export default async function Skills() {
                   className="flex flex-col items-center justify-end"
                   key={item._id}
                 >
-                  <Image width={150} height={80} src={item.icon} alt="Icon" />
-                  <h3 className="text-xl text-gray-200 ">{item.name}</h3>
+                  <Image width={150} height={150} src={item.icon} alt="Icon" />
+                  <h3 className="text-gray-200 ">{item.name}</h3>
                 </div>
               ))}
             </div>
@@ -57,8 +57,8 @@ export default async function Skills() {
                   className="flex flex-col items-center justify-end"
                   key={item._id}
                 >
-                  <Image width={150} height={80} src={item.icon} alt="Icon" />
-                  <h3 className="text-xl text-gray-200 ">{item.name}</h3>
+                  <Image width={150} height={150} src={item.icon} alt="Icon" />
+                  <h3 className="text-gray-200 ">{item.name}</h3>
                 </div>
               ))}
             </div>
@@ -78,8 +78,8 @@ export default async function Skills() {
                   className="flex flex-col items-center justify-end"
                   key={item._id}
                 >
-                  <Image width={150} height={80} src={item.icon} alt="Icon" />
-                  <h3 className="text-xl text-gray-200 ">{item.name}</h3>
+                  <Image width={150} height={150} src={item.icon} alt="Icon" />
+                  <h3 className="text-gray-200 ">{item.name}</h3>
                 </div>
               ))}
             </div>

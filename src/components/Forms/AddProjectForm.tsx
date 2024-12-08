@@ -74,7 +74,7 @@ export default function AddProjectForm() {
       <form onSubmit={handleSubmit}>
         <label>Title</label>
         <input
-          className="block shadow-md rounded border w-full mb-5 px-3 py-2"
+          className="block shadow-md rounded border w-full mb-5 px-3 py-2 bg-transparent"
           type="text"
           name="title"
           required
@@ -82,7 +82,7 @@ export default function AddProjectForm() {
 
         <label>Live link</label>
         <input
-          className="block shadow-md rounded border w-full mb-5 px-3 py-2"
+          className="block shadow-md rounded border w-full mb-5 px-3 py-2 bg-transparent"
           type="text"
           name="live"
           required
@@ -90,7 +90,7 @@ export default function AddProjectForm() {
 
         <label>Front end code</label>
         <input
-          className="block shadow-md rounded border w-full mb-5 px-3 py-2"
+          className="block shadow-md rounded border w-full mb-5 px-3 py-2 bg-transparent"
           type="text"
           name="frontend"
           required
@@ -98,7 +98,7 @@ export default function AddProjectForm() {
 
         <label>Back end code</label>
         <input
-          className="block shadow-md rounded border w-full mb-5 px-3 py-2"
+          className="block shadow-md rounded border w-full mb-5 px-3 py-2 bg-transparent"
           type="text"
           name="backend"
         />
@@ -106,7 +106,7 @@ export default function AddProjectForm() {
         <label>Used Technology</label>
 
         <input
-          className="block shadow-md rounded  border w-full mb-5 px-3 py-2"
+          className="block shadow-md rounded  border w-full mb-5 px-3 py-2 bg-transparent"
           type="text"
           name="technology"
           placeholder="Separate technologies with comma(,)"
@@ -114,14 +114,14 @@ export default function AddProjectForm() {
 
         <label>Description</label>
         <textarea
-          className="block mb-5 rounded  border w-full h-24 p-3"
+          className="block mb-5 rounded  border w-full h-24 p-3 bg-transparent"
           name="description"
           required
         />
 
         <label>Project image</label>
         <input
-          className="block bg-blue-200 shadow-md rounded "
+          className="block bg-transparent border w-full shadow-md rounded "
           type="file"
           required
           name="image"

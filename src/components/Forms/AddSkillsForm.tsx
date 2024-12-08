@@ -63,7 +63,7 @@ const AddSkillsForm = () => {
       <form onSubmit={handleSubmit}>
         <label>Skills name</label>
         <input
-          className="block shadow-md rounded border  w-full mb-5 px-3 py-2"
+          className="block shadow-md rounded border  w-full mb-5 px-3 py-2 bg-transparent"
           type="text"
           name="skills"
           required
@@ -71,17 +71,23 @@ const AddSkillsForm = () => {
 
         <label>Skills type</label>
         <select
-          className="block shadow-md rounded mb-5 mt-2 border w-full px-3 py-2"
+          className="block shadow-md rounded mb-5 mt-2 border w-full px-3 py-2 bg-transparent"
           name="type"
         >
-          <option value="frontend">Front End</option>
-          <option value="backend">Backend</option>
-          <option value="others">Others</option>
+          <option value="frontend" className="bg-blue-900">
+            Front End
+          </option>
+          <option value="backend" className="bg-blue-900">
+            Backend
+          </option>
+          <option value="others" className="bg-blue-900">
+            Others
+          </option>
         </select>
 
         <label>Skills logo</label>
         <input
-          className="block bg-blue-200 rounded border "
+          className="block bg-transparent w-full rounded border"
           type="file"
           name="logo"
           required
