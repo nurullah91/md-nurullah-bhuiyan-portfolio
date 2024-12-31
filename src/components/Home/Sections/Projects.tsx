@@ -3,6 +3,7 @@ import ProjectCard from "../ProjectCard";
 import { TProject } from "@/types";
 import SectionHeading from "@/components/SectionHeading";
 import CustomContainer from "@/components/CustomContainer";
+import Link from "next/link";
 
 export default async function Projects() {
   const projects: TProject[] = await getAllProjects();
@@ -16,6 +17,7 @@ export default async function Projects() {
             <ProjectCard key={item._id} item={item}></ProjectCard>
           ))}
         </div>
+        <Link href={"/projects"}>See more</Link>
       </CustomContainer>
     </section>
   );
