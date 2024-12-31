@@ -22,17 +22,18 @@ const About = () => {
               I am ready to be hired
             </h3>
             <p className="text-justify">
-              Hello, I&apos;m Md Nurullah Bhuiyan, a passionate web developer
-              specializing in React. Despite a non-Computer Science background,
-              my curiosity and interest in the IT field led me to web
-              development. With 1.5 years of experience as a React developer, I
-              have honed my skills in building dynamic and interactive web
-              applications. I thrive on collaborating with cross-functional
-              teams to create robust and user-friendly solutions. My journey may
-              have taken a different path, but my determination drives me to
-              continuously learn and grow in the ever-evolving world of web
-              development. Let&apos;s connect and create impactful web
-              experiences together.
+              Hello, I&apos;m Md Nurullah Bhuiyan, a dedicated web developer
+              with a strong focus on MERN stack and modern web technologies.
+              While my academic background isn&apos;t in Computer Science, my
+              passion for technology and problem-solving inspired me to dive
+              into web development. Over the past 1.5 years, I&apos;ve gained
+              valuable experience building dynamic, interactive, and
+              user-friendly web applications. I enjoy collaborating with teams
+              to deliver innovative solutions and continuously seek
+              opportunities to refine my skills in this fast-evolving field. My
+              journey reflects resilience and a commitment to growth, and
+              I&apos;m excited to contribute to creating meaningful web
+              experiences. Let&apos;s work together to build something amazing!
             </p>
           </div>
         </div>

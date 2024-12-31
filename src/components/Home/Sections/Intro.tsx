@@ -32,10 +32,10 @@ export default function Intro() {
             </h3>
 
             <p className="text-white my-4">
-              I&apos;m a passionate MERN Stack developer with a knack for
-              crafting modern web applications. I specialize in building
-              intuitive user interfaces and scalable backend systems to deliver
-              seamless experiences.
+              I&apos;m a passionate MERN stack developer with expertise in
+              building modern web applications. I specialize in creating
+              intuitive user interfaces and developing scalable backend systems
+              to deliver seamless and engaging user experiences.
             </p>
 
             <div className="my-8">

@@ -17,7 +17,14 @@ export default async function Projects() {
             <ProjectCard key={item._id} item={item}></ProjectCard>
           ))}
         </div>
-        <Link href={"/projects"}>See more</Link>
+        <div className="mt-8 text-center">
+          <Link
+            href={"/projects"}
+            className="bg-gradient-to-r from-blue-500 to-blue-800  px-4 py-3 rounded"
+          >
+            See more
+          </Link>
+        </div>
       </CustomContainer>
     </section>
   );
