@@ -1,5 +1,4 @@
 import { getAllSkills } from "@/services/skills";
-// import ParticleBG from "../ParticleBG";
 import Image from "next/image";
 import SectionHeading from "@/components/SectionHeading";
 import CustomContainer from "@/components/CustomContainer";
@@ -18,8 +17,6 @@ export default async function Skills() {
   return (
     <section id="skills" className="skillsBG my-12">
       <div className="relative">
-        {/* <ParticleBG /> */}
-
         <CustomContainer>
           <SectionHeading title="My Skills" />
 
